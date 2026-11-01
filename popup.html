@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recarregar automaticamente</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <h1>Recarregar página</h1>
+      <p class="intro">Escolha o intervalo para esta aba.</p>
+
+      <label for="interval">Recarregar a cada</label>
+      <select id="interval">
+        <option value="1">1 minuto</option>
+        <option value="2">2 minutos</option>
+      </select>
+
+      <div class="actions">
+        <button id="start" class="primary" type="button">Iniciar</button>
+        <button id="stop" type="button">Parar</button>
+      </div>
+
+      <p id="status" role="status" aria-live="polite">Carregando…</p>
+      <p id="last-reload">Última recarga automática: ainda não ocorreu.</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

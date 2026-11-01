@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Recarregar automaticamente",
+  "version": "1.0.0",
+  "description": "Recarrega a aba escolhida a cada 1 ou 2 minutos.",
+  "permissions": [
+    "alarms",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Recarregar automaticamente",
+    "default_popup": "popup.html"
+  }
+}
